@@ -1,4 +1,5 @@
-﻿int a = 148;
+﻿// Вариант 1:
+int a = 0;
 int b = a % 7;
 int c = a % 23;
 
@@ -12,7 +13,7 @@ else
     Console.WriteLine($"Число {a} - не кратно 7 и 23");
 }
 
-
+// Вариант 2:
 // using System;
 // class Program
 // {
