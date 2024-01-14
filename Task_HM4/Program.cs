@@ -11,7 +11,7 @@ class Program
     {
         Console.Write("Введите число Number: ");
         int Number = Convert.ToInt32(Console.ReadLine());
-        
+
         int NumberLen;
         NumberLen = Number.ToString().Length;
         // Console.WriteLine("The length of integer variable is: " + NumberLen);
@@ -33,7 +33,7 @@ class Program
                 }
                 else
                 {
-                Console.WriteLine(Remains);
+                    Console.WriteLine(Remains);
                 }
             }
         }
