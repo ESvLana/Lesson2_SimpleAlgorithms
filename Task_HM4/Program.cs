@@ -12,29 +12,18 @@ class Program
         Console.Write("Введите число Number: ");
         int Number = Convert.ToInt32(Console.ReadLine());
 
-        int NumberLen;
-        NumberLen = Number.ToString().Length;
-        // Console.WriteLine("The length of integer variable is: " + NumberLen);
+        while (Number > 0)
+        {
+            int Remains = Number % 10;
+            Number /= 10;
 
-        if (NumberLen == 1)
-        {
-            Console.WriteLine(Number);
-        }
-        else
-        {
-            while (Number > 0)
+            if (Number > 0)
             {
-                int Remains = Number % 10;
-                Number = Number / 10;
-
-                if (Number > 0)
-                {
-                    Console.Write(Remains + ", ");
-                }
-                else
-                {
-                    Console.WriteLine(Remains);
-                }
+                Console.Write(Remains + ", ");
+            }
+            else
+            {
+                Console.WriteLine(Remains);
             }
         }
     }
