@@ -12,11 +12,25 @@ class Program
         Console.Write("Введите число Number: ");
         int Number = Convert.ToInt32(Console.ReadLine());
 
-        while (Number > 0)
-        {
-            int Remains = Number % 10;
-            Number /= 10;
+        // while (Number > 0)
+        // {
+        //     int Remains = Number % 10;
+        //     Number /= 10;
 
+        //     if (Number > 0)
+        //     {
+        //         Console.Write(Remains + ", ");
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine(Remains);
+        //     }
+        // }
+
+        for (int Remains; Number > 0; Number /= 10)
+        {
+            Remains = Number % 10;
+            
             if (Number > 0)
             {
                 Console.Write(Remains + ", ");
