@@ -6,17 +6,25 @@ class Program
         Console.Write("Введите число Х (от 10 до 99): ");
         int X = Convert.ToInt32(Console.ReadLine());
 
-        int Digit = X / 10;
-        int Remains = X % 10;
-
-
-        if (Digit > Remains)
+        if (X > 10 && X < 99)
         {
-            Console.WriteLine(Digit);
+
+            int Digit = X / 10;
+            int Remains = X % 10;
+
+
+            if (Digit > Remains)
+            {
+                Console.WriteLine(Digit);
+            }
+            else
+            {
+                Console.WriteLine(Remains);
+            }
         }
         else
         {
-            Console.WriteLine(Remains);
+            Console.WriteLine("Введено некорректное значение Х, число " + X +" выходит за пределы диапазона от 10 до 99.");
         }
     }
 }
